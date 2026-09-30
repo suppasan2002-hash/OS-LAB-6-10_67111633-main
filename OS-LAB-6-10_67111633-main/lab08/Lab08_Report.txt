@@ -1,0 +1,19 @@
+======================================================
+COE67-222 Operating Systems - Lab 08 Report
+
+Name: Wasutorn Angsupanit
+Student ID: 67115618
+
+======================================================
+
+1. Disk Scheduling (Phase 2):
+
+FCFS caused 640 cylinders of head movement, while SCAN caused 331. SCAN services requests in one direction before reversing, like an elevator, so it reduces unnecessary movement.
+
+2. I/O Bound Concept:
+
+An I/O-bound program spends most of its time waiting for storage operations. CPU usage may remain low because performance is limited by I/O speed rather than processing speed.
+
+3. AI Industry Connection (Phase 3):
+
+Reading 1,000 small files took 0.0164 seconds, compared with 0.0006 seconds for one packed file. Packing the dataset reduces file operations and helps prevent the GPU from waiting for data.
