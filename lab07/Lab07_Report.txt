@@ -1,0 +1,18 @@
+======================================================
+COE67-222 Operating Systems - Lab 07 Report
+
+Name: Suppasan Natsathan
+Student ID: 67111633
+======================================================
+
+1. The Convoy Effect (Phase 2):
+
+In FCFS, long process P1 made P2 and P3 wait, resulting in an average waiting time of 7.33 units. Round Robin gave shorter processes earlier CPU time and reduced the average to 4.33 units.
+
+2. Choosing the Time Quantum:
+
+A very large quantum makes Round Robin behave like FCFS. A very small quantum causes excessive context switching, creating overhead and reducing performance.
+
+3. AI Context:
+
+Round Robin prevents long AI requests from blocking short ones. In the experiment, User_B_Math finished its 2-token request before User_A_Essay completed 10 tokens, improving response time and reducing perceived latency.

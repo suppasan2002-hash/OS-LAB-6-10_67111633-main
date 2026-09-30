@@ -1,0 +1,21 @@
+======================================================
+COE67-222 Operating Systems - Lab 05 Report
+
+Name: Wasutorn Angsupanit
+Student ID: 67115618
+
+======================================================
+
+1. Address Translation Math (Phase 3):
+
+For PAGE_SIZE = 4096 and logical address 10000:
+- Page Number = 10000 // 4096 = 2
+- Offset = 10000 % 4096 = 1808
+
+2. Physical Memory Fragmentation:
+
+Paging allows logical pages to be stored in any available physical frames. For example, Page 0 and Page 1 can be placed in Frames 12 and 45. The page table records this mapping, so contiguous physical memory is unnecessary and RAM is used more efficiently.
+
+3. The AI Context (mmap):
+
+Mapping a 50 MB model file increased RAM usage only from 13.87 MB to 13.88 MB because mmap loads pages on demand. When index 25,000,000 was accessed, the OS loaded only the required page, allowing large models to be used without loading the entire file into RAM.

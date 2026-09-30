@@ -1,0 +1,21 @@
+======================================================
+COE67-222 Operating Systems - Lab 10 Report (Final)
+
+Name: Suppasan Natsathan
+Student ID: 67111633
+
+======================================================
+
+1. The Role of the Operating System:
+
+- File system and permissions: The simulator rejected Workload_D_Hacker because secret_keys.txt did not exist, before allocating resources.
+- Memory management: A RAM lock made workloads wait when insufficient memory was available, helping prevent over-allocation and thrashing.
+- Deadlock avoidance: GPU requests were sorted before locks were acquired, enforcing a consistent order and preventing circular wait.
+
+2. Hardware Utilization:
+
+Workloads A, B, and C ran concurrently because their resource needs did not conflict. Together they used 58 of 64 GB RAM and all four GPUs: A used GPUs 0–2, while C used GPU 3. Workload B used 16 GB RAM and no GPU.
+
+3. Course Reflection (AI Engineering Context):
+
+OS knowledge helps MLOps engineers manage queues, memory, I/O, permissions, and shared GPUs. These concepts reduce out-of-memory errors, thrashing, deadlocks, and security risks, making AI systems more stable and efficient.
